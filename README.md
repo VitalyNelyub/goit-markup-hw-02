@@ -2,3 +2,5 @@
 <li>
 <a href="https://hellenglish.goit.global">https://hellenglish.goit.global/</a>
 </li>
+
+rel="noreferrer noopener"
