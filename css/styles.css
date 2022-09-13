@@ -1,9 +1,26 @@
-/* Шапка */
-.nav .navigation {
-color: 212121;
+:root {
 }
-.nav .navigation:hover {
-color: 2196F3;
+/* logo-color:#000000; #2196F3 */
+
+/* primaci-color: 2F303A  */
+/* bgc: #FFFFFF */
+/* text-title-color: #212121 */
+/* text-secondary-color: #757575 */
+
+body {
+  background-color: #ffffff;
+}
+/* Шапка */
+/* Навігація */
+.nav .navigation {
+  color: #212121;
+}
+.nav .navigation:hover,
+.nav .navigation:focus {
+  color: #2196f3;
+}
+/* Контакти */
+.contacts {
 }
 /* Основний контент студія */
 
