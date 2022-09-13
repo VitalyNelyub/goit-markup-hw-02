@@ -135,8 +135,18 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  text-decoration: none
+  text-decoration: none;
 }
 .footer-list {
-    list-style: none;
+  list-style: none;
+}
+
+.footer-adress:hover,
+.footer-adress:focus {
+  color: #2196f3;
+}
+
+.footer-link:hover,
+.footer-link:focus {
+  color: #2196f3;
 }
