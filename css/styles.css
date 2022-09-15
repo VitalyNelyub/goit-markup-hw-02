@@ -45,6 +45,10 @@ body {
   color: var(--accent-color);
 }
 
+.navigation .nav-link.current {
+  color: var(--accent-color);
+}
+
 .head-contacts .contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -199,7 +203,7 @@ body {
 
 /* Портфоліо */
 
-.features-btn {
+.filter-btn {
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -210,8 +214,8 @@ body {
   cursor: pointer;
 }
 
-.features-btn:hover,
-.features-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--white-color);
 }
