@@ -2,19 +2,38 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --bg-color: #2f303a;
-  --white-color: #ffffff;
+  --bg-footer-color: #2f303a;
+  --primaci-bg-color: #ffffff;
   --secondary-text-color: (255, 255, 255, 0.6);
+  --bgc-btn: #f5f4fa;
+  --border-color: #EEEEEE;
+  --line-color: #ECECEC;
+  --cursor-color: #000000;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: var(--white-color);
+  background-color: var(--primaci-bg-color);
   color: var(--primary-text-color);
+  font-size: 14px;
+  letter-spacing: 0.03em;
 }
 
 .list {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .head-logo {
@@ -24,7 +43,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
 }
 
 .logo-style {
@@ -34,7 +52,6 @@ body {
 .navigation .nav-link {
   color: var(--title-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -52,7 +69,6 @@ body {
 .head-contacts .contact-link {
   color: var(--primary-text-color);
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -66,7 +82,7 @@ body {
 /* Герой */
 
 .hero {
-  background-color: var(--bg-color);
+  background-color: var(--bg-footer-color);
 }
 
 .hero-head {
@@ -76,7 +92,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: var(--primaci-bg-color);
 }
 
 .hero-btn {
@@ -88,14 +104,15 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: var(--white-color);
+  color: var(--primaci-bg-color);
   background-color: var(--accent-color);
   cursor: pointer;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  color: var(--title-text-color);
+  color: var(--accent-color);
+  background-color: var(--bgc-btn);
 }
 
 /* Міркування */
@@ -103,20 +120,19 @@ body {
 .desc-title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .desc-list {
   color: var(--primary-text-color);
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
 }
 
 /* Чим ми займаємося, Наша команда */
+.team {
+  background-color: var(--bgc-btn);
+}
 
 .work-title {
   color: var(--title-text-color);
@@ -124,7 +140,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .team-title {
@@ -133,7 +148,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .section-team {
@@ -142,7 +156,6 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 .work-team {
@@ -150,13 +163,12 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Підвал */
 
 .footer {
-  background-color: var(--bg-color);
+  background-color: var(--bg-footer-color);
 }
 
 .footer-logo {
@@ -166,18 +178,15 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   text-decoration: none;
 }
 .logo-footer-style {
-  color: var(--white-color);
+  color: var(--primaci-bg-color);
 }
 
 .footer-adress {
-  color: var(--white-color);
-  font-size: 14px;
+  color: var(--primaci-bg-color);
   line-height: 1.71;
-  letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
 }
@@ -189,9 +198,7 @@ body {
 
 .footer-link {
   color: var(--secondary-text-color);
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   font-style: normal;
   text-decoration: none;
 }
@@ -209,15 +216,15 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
+  background-color: var(--bgc-btn);
   cursor: pointer;
 }
 
 .filter-btn:hover,
 .filter-btn:focus {
   background-color: var(--accent-color);
-  color: var(--white-color);
+  color: var(--primaci-bg-color);
 }
 
 .project-title {
@@ -232,5 +239,4 @@ body {
   columns: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
 }
