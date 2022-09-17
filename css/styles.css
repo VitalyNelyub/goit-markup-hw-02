@@ -6,8 +6,8 @@
   --primaci-bg-color: #ffffff;
   --secondary-text-color: (255, 255, 255, 0.6);
   --bgc-btn: #f5f4fa;
-  --border-color: #EEEEEE;
-  --line-color: #ECECEC;
+  --border-color: #eeeeee;
+  --line-color: #ececec;
   --cursor-color: #000000;
 }
 
@@ -120,6 +120,7 @@ body {
 .desc-title {
   color: var(--title-text-color);
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -219,6 +220,7 @@ body {
   color: var(--title-text-color);
   background-color: var(--bgc-btn);
   cursor: pointer;
+  letter-spacing: 0.03em;
 }
 
 .filter-btn:hover,
